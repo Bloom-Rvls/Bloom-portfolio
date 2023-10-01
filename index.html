@@ -117,12 +117,13 @@
           <section id="projects-section">
                <h1>Recent projects</h1>
 
-               <h3>As a team</h3>
+               <h3>Team projects</h3>
                <div id="team" class="cardGroup">
                     <div class="card">
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
-                              <h4>Fantaro <span class="techno"> Flutter  Dart</span></h4>
+                              <h4>Fantaro</h4>
+                              <p class="techno"> Flutter  Dart</p>
                               <p>Mobile application which inform its users about the dangers that may exist in the world and at the same time offers solutions.</p>
                               <a href="#">See more </a>
                          </div>
@@ -131,19 +132,21 @@
                     <div class="card">
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
-                              <h4>Automatic trash <span class="techno"> Arduino  MTI app inventor</span></h4>
+                              <h4>Automatic trash</h4>
+                              <p class="techno"> Arduino  MTI app inventor</p>
                               <p>A trash which can open automatically at a certain distance and close automatically after a while. It can also be commanded by a special mobile application that we made with MIT app inventor. </p>
                               <a href="#">See more </a>
                          </div>
                     </div>
                </div>
 
-               <h3>Personal</h3>
+               <h3>Personal projects</h3>
                <div id="personal" class="cardGroup"> 
                     <div class="card">
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
-                              <h4>Gessing number game <span class="techno"> Html 5  bootstrap 4  javasript</span></h4>
+                              <h4>Gessing number game</h4>
+                              <p class="techno"> Html 5  bootstrap 4  javasript</p>
                               <p>A little game which invited people to find a mysterious number between 1 and 10  in free try otherwise they lose. </p>
                               <a href="#">See code source </a>
                          </div>
@@ -151,7 +154,8 @@
                     <div class="card">
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
-                              <h4>Light and dark mode <span class="techno"> Html 5  bootstrap 4  javascript</span></h4>
+                              <h4>Light and dark mode</h4>
+                              <p class="techno"> Html 5  bootstrap 4  javascript</p>
                               <p>A little light and dark mode system made principaly with javaScript. The user just have to select an option to chage the color mode. </p>
                               <a href="#">See code source </a>
                          </div>
@@ -159,7 +163,8 @@
                     <div class="card">
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
-                              <h4>Blog <span class="techno"> Html 5  bootstrap 4  php sql  Mysql</span></h4>
+                              <h4>Blog</h4>
+                              <p class="techno"> Html 5  bootstrap 4  php sql  Mysql</p>
                               <p>A web site made principaly with php which show a list of all articles sotcked in a database, details of each article and have an administration system within we can create new article, modify or delete an existing article. </p>
                               <a href="#">See code source </a>
                          </div>
@@ -169,42 +174,42 @@
 
           <!-- ************************ contact section ***************************** -->
           <section id="contact-section">
-               <h1>Contact</h1>
-               <div>
-                    <h3>Send me an email</h3>
-                    <form action="">
-                         <div>
-                              <label for="name">Name</label>
-                              <input type="text" id="name" name="name">
+               <h1>Contact me</h1>
+               <div id="contact-form">
+                    <form> 
+                         <div class="fullBlock">
+                              <textarea name="message" id="message" class="inputT" placeholder="Write your message here"></textarea>
                          </div>
-                         <div>
-                              <label for="firstname">First name</label>
-                              <input type="text" id="firstname" name="firstname">
+                         <div class="smallBlock">
+                              <input type="text" id="name" class="inputT" name="name" placeholder="Your name">
                          </div>
-                         <div>
-                              <label for="mail">E-mail adress</label>
-                              <input type="email" name="mail" id="mail">
+                         <div class="smallBlock">
+                              <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress">
                          </div>
-                         <div>
-                              <label for="message">Message</label>
-                              <textarea name="message" id="message"></textarea>
+                         <div class="fullBlock">
+                              <input type="text" name="object" class="inputT" id="object" placeholder="Object">
                          </div>
-                         <div>
-                              <input type="submit" value="Send">
+                         <div class="fullBlock">
+                              <input type="submit" value="Send" id="send-mail">
                          </div>
                     </form>
-               </div> 
+               </div>
+          
           </section>
 
           <!-- ************************ footer ***************************** -->
           <footer id="footer-section">
                <a href="https://web.facebook.com/bloom.ravel" class="fa fa-facebook"></a>
                <a href="https://www.linkedin.com/in/ang%C3%A9lica-ravelonjohanison-b43185262/" class="fa fa-linkedin"></a>
-               <a href="https://www.linkedin.com/in/ang%C3%A9lica-ravelonjohanison-b43185262/" class="fa fa-whatsapp"></a>
+               <a href="#" class="fa fa-whatsapp"></a>
                <a href="https://github.com/Bloom-Rvls" class="fa fa-github"></a>
           </footer>
 
-          <a href="#about-section" id="back-to-top"><i class="fa fa-arrow-circle-up"></i></a>
+          <div id="top">
+               <a href="#about-section" id="back-to-top"><i class="fa fa-arrow-circle-up"></i></a>
+          </div>
+
+          
      </div>
 </body>
 </html>

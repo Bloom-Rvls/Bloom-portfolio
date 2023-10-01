@@ -13,6 +13,11 @@ body {
 section {
      margin: 30px 0 30px 0;
 }
+#top {
+     display: flex;
+     justify-content: end;
+     position: relative;
+}
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
 #nav-bar {
@@ -85,6 +90,11 @@ ul {
      align-items: center;
 }
 
+#skills-section .singleSkill:hover {
+     transform: scale(1.5);
+    transition: 1.5s;
+}
+
 #skills-section .singleSkill p {
      font-weight: bold;
 }
@@ -116,3 +126,88 @@ ul {
      color: rgb(14, 165, 233);
      text-decoration: none;
 }
+
+#projects-section .card .card-content .techno {
+     color: grey;
+}
+
+/* -------------------------------------------- contact section ------------------------------------------------------*/
+#contact-section #contact-form{
+     display: flex;
+     justify-content: flex-end;
+}
+
+#contact-section #contact-form form {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     width: 60%;
+     padding: 5px;
+}
+
+#contact-section #contact-form .fullBlock {
+     width: 90%;
+     padding: 5px;
+}
+
+#contact-section #contact-form .smallBlock {
+     width: 40%;
+     padding: 5px;
+}
+
+#contact-section #contact-form .inputT {
+     display: block;
+     height: 40px;
+     border-radius: 10px;
+     width: 100%;
+}
+
+#contact-section #send-mail {
+     width: 200px;
+     height: 40px;
+     font-size: large;
+     border-radius: 10px;
+     color: white;
+     background-color: rgb(14, 165, 233);  
+     border: solid rgb(14, 165, 233) 2px;
+     font-weight: bold;
+}
+
+/* -------------------------------------------- footer section ------------------------------------------------------*/
+#footer-section {
+     margin: 20px;
+     display: flex;
+     justify-content: center;
+}
+
+#footer-section .fa, #top #back-to-top {
+     margin: 20px;
+     padding: 10px 7px 7px 7px;
+     font-size: 50px;
+     width: 60px;
+     height: 60px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 100%;
+}
+
+#footer-section .fa-facebook {
+     background-color: rgb(9, 77, 179);
+     color: white;
+}
+
+#footer-section .fa-linkedin {
+     background-color: rgb(19, 113, 150);
+     color:  rgb(255, 255, 255);
+}
+
+#footer-section .fa-whatsapp {
+     background-color: rgb(6, 189, 88);
+     color:rgb(255, 255, 255);
+}
+
+#footer-section .fa-github {
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+}
+
