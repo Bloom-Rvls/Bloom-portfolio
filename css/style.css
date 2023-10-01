@@ -22,11 +22,12 @@ section {
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
 #nav-bar {
      margin: 30px 0 50px 0 ;
+     display: flex;
+     justify-content: space-between;
 }
 ul {
-     display: flex;
-     justify-content: flex-end;
      list-style-type: none;
+     display: flex;
 }
 .navLink {
      text-decoration: none;
