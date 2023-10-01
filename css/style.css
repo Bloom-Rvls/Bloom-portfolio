@@ -10,6 +10,9 @@ body {
      width: 50%;
      margin: auto;
 }
+section {
+     margin: 30px 0 30px 0;
+}
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
 #nav-bar {
@@ -28,7 +31,88 @@ ul {
 }
 
 /* -------------------------------------------- About section ------------------------------------------------------*/
-#about-section {
+#about-content {
      display: flex;
+     justify-content: space-between;
      margin-top: 20px;
+}
+
+#about-me {
+     width: 40%;
+     text-align: justify;
+}
+
+#about-me button {
+     width: 200px;
+     height: 40px;
+     font-size: large;
+     border-radius: 20px;
+     color: white;
+     background-color: rgb(14, 165, 233);  
+     border: solid rgb(14, 165, 233) 2px;
+     font-weight: bold;
+}
+
+#cv-button {
+     display: flex;
+     justify-content: center;
+     margin: 20px 0 0 0;
+}
+
+#profil {
+     width: 300px;
+     height: 400px;
+     border-radius: 100%;
+}
+
+/* -------------------------------------------- skills section ------------------------------------------------------*/
+#skills-section .icon {
+     width: 50px;
+     height: 50px;
+}
+
+#skills-section .skills {
+     display: flex;
+     justify-content: space-evenly;
+}
+
+#skills-section .singleSkill {
+     width: 150px;
+     height: 70px;
+     border-radius: 15px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+#skills-section .singleSkill p {
+     font-weight: bold;
+}
+
+/* -------------------------------------------- projects section ------------------------------------------------------*/
+#projects-section .card {
+     width: 25%;
+     background-color: rgb(30, 41, 59);
+     padding: 20px;
+     margin: 10px;
+     border-radius: 15px;
+}
+
+#projects-section .card .card-content {
+     text-align: justify;
+}
+
+#projects-section .card img {
+     max-width: 100%;
+     max-height: 50%;
+}
+
+#projects-section .cardGroup {
+     display: flex;
+     justify-content: space-evenly;
+}
+
+#projects-section .card .card-content>a {
+     color: rgb(14, 165, 233);
+     text-decoration: none;
 }
