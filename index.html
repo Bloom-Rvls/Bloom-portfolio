@@ -31,7 +31,7 @@
 
           <!-- ************************ header section ***************************** -->
           <header id="about-section">
-               <div>
+               <div id="section-title">
                     <h1>About me</h1>
                </div>
                <div id="about-content">
@@ -41,7 +41,7 @@
                          <p>I have always been passionate about technology and everything surrounded it.</p>
                          <p>Apart my passion for technology, I’m a big animal lovers too.</p>
                          <div id="cv-button">
-                              <a href="files/Angelica.pdf" target="_blank">
+                              <a href="files/RAVELONJOHANISON.pdf" target="_blank">
                                    <button>View CV</button>
                               </a>
                          </div>
@@ -55,7 +55,7 @@
 
           <!-- ************************ skills section ***************************** -->
           <section id="skills-section">
-               <div>
+               <div id="section-title">
                     <h1>Skills</h1>
                </div>
                
@@ -66,7 +66,7 @@
                          <p>HTML 5</p>
                     </div>
                     <div class="singleSkill" style="border: solid 2px rgb(26, 122, 231);">
-                         <img src="images/skills/css.png" alt="css icon" class="icon">
+                         <img src="images/skills/css-3.png" alt="css icon" class="icon">
                          <p>CSS 3</p>
                     </div>
                     <div class="singleSkill" style="border: solid 2px yellow;">
@@ -118,17 +118,17 @@
 
           <!-- ************************ dimploma and certification ***************************** -->
           <section id="diploma-certification">
-               <div>
+               <div id="section-title">
                     <h1>Diplomas and certifications</h1>
                </div>
-               <p>
-                    Click <a href="#">here</a> to see all my diplomas and certifications.
-               </p>
+               <a href="#" id="diploma">Diplomas</a>
+               <a href="#" id="certification">Certifications</a>
+               
           </section>
 
           <!-- ************************ projects section ***************************** -->
           <section id="projects-section">
-               <div>
+               <div id="section-title">
                     <h1>Recent projects</h1>
                </div>
                
@@ -136,6 +136,9 @@
                <h3>Team projects</h3>
                <div id="team" class="cardGroup">
                     <div class="card">
+                         <div class="card-image" id="fantaro">
+                         
+                         </div>
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
                               <h4>Fantaro</h4>
@@ -146,6 +149,9 @@
                     </div>
 
                     <div class="card">
+                         <div class="card-image" id="trash">
+                         
+                         </div>
                          <img src="images/trash/images.jpeg" alt="automatic trash">
                          <div class="card-content">
                               <h4>Automatic trash</h4>
@@ -159,6 +165,9 @@
                <h3>Personal projects</h3>
                <div id="personal" class="cardGroup"> 
                     <div class="card">
+                         <div class="card-image" id="game">
+                         
+                         </div>
                          <img src="images/gessing number/number-guessing-game.jpg" alt="gessing number game">
                          <div class="card-content">
                               <h4>Gessing number game</h4>
@@ -168,6 +177,9 @@
                          </div>
                     </div>
                     <div class="card">
+                         <div class="card-image" id="dark">
+                         
+                         </div>
                          <img src="images/light-dark-mode/light_dark.jpg" alt="light dark mode">
                          <div class="card-content">
                               <h4>Light and dark mode</h4>
@@ -177,7 +189,10 @@
                          </div>
                     </div>
                     <div class="card">
-                         <img src="images/blog/blog.jpg" alt="blog">
+                         <div class="card-image" id="blog">
+                         
+                         </div>
+                         
                          <div class="card-content">
                               <h4>Blog</h4>
                               <p class="techno"> Html 5  bootstrap 4  php sql  Mysql</p>
@@ -188,40 +203,41 @@
                </div>
           </section>
 
-          <!-- ************************ contact section ***************************** -->
-          <section id="contact-section">
-               <div>
-                    <h1>Contact me</h1>
-               </div>
-               
-               <div id="contact-form">
-                    <form> 
-                         <div class="fullBlock">
-                              <textarea name="message" id="message" class="inputT" placeholder="Write your message here"></textarea>
-                         </div>
-                         <div class="smallBlock">
-                              <input type="text" id="name" class="inputT" name="name" placeholder="Your name">
-                         </div>
-                         <div class="smallBlock">
-                              <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress">
-                         </div>
-                         <div class="fullBlock">
-                              <input type="text" name="object" class="inputT" id="object" placeholder="Object">
-                         </div>
-                         <div class="fullBlock">
-                              <input type="submit" value="Send" id="send-mail">
-                         </div>
-                    </form>
-               </div>
-          
-          </section>
 
           <!-- ************************ footer ***************************** -->
-          <footer id="footer-section">
-               <a href="https://web.facebook.com/bloom.ravel" class="fa fa-facebook"></a>
-               <a href="https://www.linkedin.com/in/ang%C3%A9lica-ravelonjohanison-b43185262/" class="fa fa-linkedin"></a>
-               <a href="#" class="fa fa-whatsapp"></a>
-               <a href="https://github.com/Bloom-Rvls" class="fa fa-github"></a>
+          <footer>
+               <div id="section-title">
+                    <h1>Contact me</h1>
+               </div>
+               <div id="footer-section">
+                    <div id="social-link">
+                         <a href="https://web.facebook.com/bloom.ravel" class="fa fa-facebook"></a>
+                         <a href="https://github.com/Bloom-Rvls" class="fa fa-github"></a>
+                         <a href="https://www.linkedin.com/in/ang%C3%A9lica-ravelonjohanison-b43185262/" class="fa fa-linkedin"></a>
+                    </div>
+     
+                    <div id="contact-form">
+                         <form> 
+                              <div class="fullBlock" id="text-area">
+                                   <textarea name="message" id="message" inputT" placeholder="Write your message here"></textarea>
+                              </div>
+                              <div class="smallBlock">
+                                   <input type="text" id="name" class="inputT" name="name" placeholder="Your name">
+                              </div>
+                              <div class="smallBlock">
+                                   <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress">
+                              </div>
+                              <div class="fullBlock">
+                                   <input type="text" name="object" class="inputT" id="object" placeholder="Object">
+                              </div>
+                              <div class="fullBlock">
+                                   <input type="submit" value="Send" id="send-mail">
+                              </div>
+                         </form>
+                    </div>
+               </div>
+               
+               
           </footer>
 
           <!-- ************************ back to top ***************************** -->
