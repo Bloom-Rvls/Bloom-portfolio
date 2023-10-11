@@ -18,6 +18,11 @@ body {
 section {
      margin: 70px 0 70px 0;
 }
+
+#section-title {
+     margin: 100px 0px 150px 0px;
+}
+
 #section-title h1 {
      font-size: 50px;
      margin-left: 50px;
@@ -25,14 +30,19 @@ section {
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
 #nav-bar {
-     margin: 30px 0 50px 0 ;
+     margin: 30px 0 100px 0 ;
      display: flex;
      justify-content: space-between;
 }
-ul {
+#nav-bar ul {
      list-style-type: none;
      display: flex;
 }
+
+#nav-bar ul li, #brand {
+     font-size: 25px;
+}
+
 .navLink {
      text-decoration: none;
      font-weight: bold;
@@ -58,22 +68,42 @@ ul {
      }
 
 /* -------------------------------------------- About section ------------------------------------------------------*/
+#about-section {
+     margin-top: 10px;
+     margin-bottom: 100px;
+}
+
 #about-content {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap-reverse;
-     margin-top: 20px;
 }
 
 #about-me {
-     width: 40%;
+     width: 50%;
      text-align: justify;
+     font-size: 25px;
+}
+
+#about-me h2 {
+     font-size: 60px;
+     color: rgb(14, 165, 233);
+     margin-bottom: 100px ;
+}
+
+#about-me p {
+     font-size: 30px;
+}
+
+#about-me .about {
+     color: rgb(14, 165, 233);
+     font-weight: bold;
 }
 
 #about-me button {
-     width: 200px;
-     height: 40px;
-     font-size: large;
+     width: 300px;
+     height: 60px;
+     font-size: 23px;
      border-radius: 20px;
      color: white;
      background-color: rgb(14, 165, 233);  
@@ -84,13 +114,14 @@ ul {
 #cv-button {
      display: flex;
      justify-content: center;
-     margin: 20px 0 0 0;
+     margin: 80px 0px 0px 0px;
 }
 
 #profil {
      width: 100%;
      height: auto;
      border-radius: 100%;
+     margin: 120px 100px 0px 0px;
 }
 
      /* for mobile phones*/
@@ -100,14 +131,15 @@ ul {
                text-align: justify;
           }
           #about-me button {
-               width: 100px;
+               width: 130px;
+               font-size: medium;
           }
      }
 
 /* -------------------------------------------- skills section ------------------------------------------------------*/
 #skills-section .icon {
-     width: 50px;
-     height: 50px;
+     width: 80px;
+     height: 80px;
 }
 
 #skills-section .skills {
@@ -118,10 +150,11 @@ ul {
 
 #skills-section .singleSkill {
      width: 150px;
-     height: 70px;
+     height: 150px;
      border-radius: 15px;
      display: flex;
      justify-content: space-evenly;
+     flex-direction: column;
      align-items: center;
      margin: 10px;
 }
@@ -138,19 +171,31 @@ ul {
 /* -------------------------------------------- diploma and certification ------------------------------------------------------*/
 
 
-#diploma-certification a {
-     display: block;
-     text-decoration: none;
+#diploma-certification #diploma-container{
+     display: flex;
+
+     
+}
+
+.certificate {
+     display: flex;
+     justify-content: center;
+     align-content: center;
      background-color: rgb(30, 41, 59);
      margin: 10px 0 10px 0;
      height: 100px;
      border-radius: 20px;
      text-align: center;
-     padding-top: 40px;
      color: white;
      font-weight: bolder;
      font-size: larger;
 }
+
+#diploma-certification img {
+     width: 50px;
+     height: 50px;
+}
+
 
 /* -------------------------------------------- projects section ------------------------------------------------------*/
 #projects-section .card {
@@ -161,12 +206,6 @@ ul {
      border-radius: 15px;
 }
 
-#projects-section .card #blog {
-     height: 50%;
-     background-image: url('../images/blog/blog.jpg');
-     background-size: cover;
-     background-position: center;
-}
 
 #projects-section .card .card-content {
      text-align: justify;
@@ -224,6 +263,7 @@ ul {
 #footer-section #contact-form{
      display: flex;
      justify-content: flex-end;
+     margin-bottom: 30px;
 }
 
 #footer-section #contact-form form {
@@ -247,9 +287,11 @@ ul {
 #footer-section #contact-form textarea {
      height: 100%;
      width: 100%;
-     background-color: rgb(22, 30, 49);
-     border: 1px solid rgb(22, 30, 49);
-     border-radius: 10px;
+     padding: 10px;
+     background-color: rgb(10, 15, 27);
+     border-top: none;
+     border-left: none;
+     border-right: none; 
 }
 
 #footer-section #contact-form .smallBlock {
@@ -259,18 +301,20 @@ ul {
 
 #footer-section #contact-form .inputT {
      display: block;
+     padding: 10px;
      height: 40px;
-     border-radius: 10px;
      width: 100%;
-     background-color: rgb(22, 30, 49);
-     border: 1px solid rgb(22, 30, 49);
+     background-color: rgb(10, 15, 27);
+     border-top: none;
+     border-left: none;
+     border-right: none; 
 }
 
 #footer-section #send-mail {
      width: 100%;
      height: 40px;
      font-size: large;
-     border-radius: 10px;
+     border-radius: 5px;
      color: white;
      background-color: rgb(14, 165, 233);  
      border: solid rgb(14, 165, 233) 2px;
@@ -313,25 +357,9 @@ ul {
      height: 60px;
      text-align: center;
      text-decoration: none;
+     color: white;
 }
 
-#footer-section .fa-facebook {
-     color: rgb(9, 77, 179);
-}
-
-#footer-section .fa-linkedin {
-     color: rgb(19, 113, 150);
-;
-}
-
-#footer-section .fa-whatsapp {
-     color: rgb(6, 189, 88);
-;
-}
-
-#footer-section .fa-github {
-     color: rgb(255,255, 255);
-}
 
      /* for mobile phones*/
      @media (max-width: 768px) {

@@ -14,7 +14,7 @@
           <!-- ************************ navigation bar ***************************** -->
           <nav id="nav-bar">
                <div>
-                    <h3>Bloom</h3>
+                    <h3 id="brand">Bloom</h3>
                </div>
                <ul>
                     <li class="navItem"><a href="#about-section" class="navLink">About</a></li>
@@ -31,18 +31,16 @@
 
           <!-- ************************ header section ***************************** -->
           <header id="about-section">
-               <div id="section-title">
-                    <h1>About me</h1>
-               </div>
+               
                <div id="about-content">
                     <div id="about-me">
                          <h2>Hi there, welcome here!</h2>
-                         <p>I’m Angélica, I’m a junior backend developer and I’m a second master’s degree student in computer siences  from Madagascar.</p>
+                         <p>I’m <span class="about">Angélica</span>, I’m a <span class="about">junior backend developer</span> and I’m a second master’s degree student in computer siences  from Madagascar.</p>
                          <p>I have always been passionate about technology and everything surrounded it.</p>
                          <p>Apart my passion for technology, I’m a big animal lovers too.</p>
                          <div id="cv-button">
                               <a href="files/RAVELONJOHANISON.pdf" target="_blank">
-                                   <button>View CV</button>
+                                   <button>Download CV</button>
                               </a>
                          </div>
                     </div>
@@ -121,8 +119,16 @@
                <div id="section-title">
                     <h1>Diplomas and certifications</h1>
                </div>
-               <a href="#" id="diploma">Diplomas</a>
-               <a href="#" id="certification">Certifications</a>
+               <div id="dimploma-container">
+                    <div class="certificate">
+                         <img src="images/diplome.png" alt="">
+                         <p>Diplomas</p>
+                    </div>
+                    <div class="certificate">
+                         <img src="images/certificat.png" alt="">
+                         <p>Certifications</p>
+                    </div>
+               </div>
                
           </section>
 
@@ -136,9 +142,6 @@
                <h3>Team projects</h3>
                <div id="team" class="cardGroup">
                     <div class="card">
-                         <div class="card-image" id="fantaro">
-                         
-                         </div>
                          <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-content">
                               <h4>Fantaro</h4>
@@ -149,10 +152,7 @@
                     </div>
 
                     <div class="card">
-                         <div class="card-image" id="trash">
-                         
-                         </div>
-                         <img src="images/trash/images.jpeg" alt="automatic trash">
+                         <img src="images/trash/poubelle.jpg" alt="automatic trash">
                          <div class="card-content">
                               <h4>Automatic trash</h4>
                               <p class="techno"> Arduino  MIT app inventor</p>
@@ -165,9 +165,6 @@
                <h3>Personal projects</h3>
                <div id="personal" class="cardGroup"> 
                     <div class="card">
-                         <div class="card-image" id="game">
-                         
-                         </div>
                          <img src="images/gessing number/number-guessing-game.jpg" alt="gessing number game">
                          <div class="card-content">
                               <h4>Gessing number game</h4>
@@ -177,9 +174,6 @@
                          </div>
                     </div>
                     <div class="card">
-                         <div class="card-image" id="dark">
-                         
-                         </div>
                          <img src="images/light-dark-mode/light_dark.jpg" alt="light dark mode">
                          <div class="card-content">
                               <h4>Light and dark mode</h4>
@@ -189,10 +183,7 @@
                          </div>
                     </div>
                     <div class="card">
-                         <div class="card-image" id="blog">
-                         
-                         </div>
-                         
+                         <img src="images/blog/blog.png" alt="image d'un blog">
                          <div class="card-content">
                               <h4>Blog</h4>
                               <p class="techno"> Html 5  bootstrap 4  php sql  Mysql</p>
