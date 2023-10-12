@@ -20,12 +20,12 @@ section {
 }
 
 #section-title {
-     margin: 100px 0px 150px 0px;
+     margin: 100px 0px 100px 0px;
 }
 
 #section-title h1 {
      font-size: 50px;
-     margin-left: 50px;
+     color: rgb(14, 165, 233);;
 }
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
@@ -138,6 +138,7 @@ section {
 
 /* -------------------------------------------- skills section ------------------------------------------------------*/
 #skills-section .icon {
+     margin-top: 10px;
      width: 80px;
      height: 80px;
 }
@@ -146,17 +147,19 @@ section {
      display: flex;
      justify-content: space-evenly;
      flex-wrap: wrap;
+     margin: 30px;
 }
 
 #skills-section .singleSkill {
      width: 150px;
      height: 150px;
-     border-radius: 15px;
+     border-radius: 5px;
      display: flex;
      justify-content: space-evenly;
      flex-direction: column;
      align-items: center;
      margin: 10px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #skills-section .singleSkill:hover {
@@ -171,9 +174,7 @@ section {
 /* -------------------------------------------- diploma and certification ------------------------------------------------------*/
 
 
-#diploma-certification #diploma-container{
-     display: flex;
-
+#diploma-certification .diploma-container{
      
 }
 
@@ -181,8 +182,9 @@ section {
      display: flex;
      justify-content: center;
      align-content: center;
-     background-color: rgb(30, 41, 59);
-     margin: 10px 0 10px 0;
+     align-items: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     margin: 30px 0 30px 0;
      height: 100px;
      border-radius: 20px;
      text-align: center;
@@ -191,29 +193,58 @@ section {
      font-size: larger;
 }
 
-#diploma-certification img {
+#diploma-certification .icon {
      width: 50px;
      height: 50px;
+     margin-right: 20px;
+}
+
+#diploma-certification .diploma {
+     width: 80%;
+     height: auto;
+     margin-bottom: 10px;
+}
+
+#diploma-certification .dropdown-content {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     display: none;
+}
+
+.show {
+     display: block;
 }
 
 
 /* -------------------------------------------- projects section ------------------------------------------------------*/
 #projects-section .card {
      width: 30%;
-     background-color: rgb(30, 41, 59);
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
      padding: 20px;
      margin: 10px;
      border-radius: 15px;
 }
 
+#projects-section h3 {
+     text-align: center;
+     margin: 20px 0px 50px 0px;
+}
+
 
 #projects-section .card .card-content {
      text-align: justify;
+     display: none;
+}
+
+#projects-section .card:hover .card-content {
+     display: block;
+     transition: 4.5s;
 }
 
 #projects-section .card img {
      max-width: 100%;
-     max-height: 50%;
+     max-height: 100%;
 }
 
 #projects-section .cardGroup {
@@ -227,7 +258,7 @@ section {
      text-decoration: none;
 }
 
-#projects-section .card .card-content .techno {
+#projects-section .card .card-title .techno {
      color: grey;
 }
 
