@@ -173,11 +173,6 @@ section {
 
 /* -------------------------------------------- diploma and certification ------------------------------------------------------*/
 
-
-#diploma-certification .diploma-container{
-     
-}
-
 .certificate {
      display: flex;
      justify-content: center;
@@ -204,18 +199,6 @@ section {
      height: auto;
      margin-bottom: 10px;
 }
-
-#diploma-certification .dropdown-content {
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-     display: none;
-}
-
-.show {
-     display: block;
-}
-
 
 /* -------------------------------------------- projects section ------------------------------------------------------*/
 #projects-section .card {
@@ -339,6 +322,7 @@ section {
      border-top: none;
      border-left: none;
      border-right: none; 
+     color: white;
 }
 
 #footer-section #send-mail {
