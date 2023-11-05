@@ -194,10 +194,11 @@ section {
      margin-right: 20px;
 }
 
-#diploma-certification .diploma {
-     width: 80%;
+#diploma-certification a {
+     width: 100%;
      height: auto;
      margin-bottom: 10px;
+     text-decoration: none;
 }
 
 /* -------------------------------------------- projects section ------------------------------------------------------*/
