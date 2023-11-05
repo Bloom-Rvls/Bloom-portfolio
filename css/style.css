@@ -52,6 +52,7 @@ section {
 
 #nav-bar .iconBar {
      display: none;
+     color: white;
 }
 
      /* for mobile phones*/
@@ -126,13 +127,27 @@ section {
 
      /* for mobile phones*/
      @media (max-width: 768px) {
+          #about-me h2 {
+               font-size: 50px;
+               color: rgb(14, 165, 233);
+               margin-bottom: 100px ;
+          }
+          #profil {
+               width: 70%;
+               height: auto;
+               border-radius: 100%;
+               margin: 70px 150px 0px 0px;
+          }
+          #about-me p {
+               font-size: 25px;
+          }
           #about-me {
                width: 100%;
                text-align: justify;
           }
           #about-me button {
-               width: 130px;
-               font-size: medium;
+               width: 200px;
+               font-size: large;
           }
      }
 
@@ -294,6 +309,18 @@ section {
           padding: 20px;
           margin: 10px;
           border-radius: 15px;
+     }
+     #projects-section .card .card-content {
+          text-align: justify;
+          display: block;
+     }
+     .modal-content {
+          background-color: rgba(0,0,0,0.4);
+          margin: 15% auto; 
+          padding: 20px;
+          border: 1px solid #888;
+          border-radius: 20px;
+          width: 100%; 
      }
 }
 
