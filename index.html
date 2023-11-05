@@ -127,7 +127,7 @@
                     <h1>Recent projects</h1>
                </div>
                
-
+               <!-- Team projects -->
                <h3>Team projects</h3>
                <div id="team" class="cardGroup">
                     <div class="card">
@@ -151,11 +151,20 @@
                          </div>
                          <div class="card-content">
                               <p>A trash which can open automatically at a certain distance and close automatically after a while. It can also be commanded by a special mobile application that we made with MIT app inventor. </p>
-                              <a href="#">View demo </a>
+                              <a href="#myModal" id="modalLink">View demo </a>
+                         </div>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                         <!-- Modal content -->
+                         <div class="modal-content">
+                           <span class="close">&times;</span>
+                           <video src="video/Zara_Larsson_-_Lush_Life_(Lyrics)(360p).mp4" controls></video>
                          </div>
                     </div>
                </div>
 
+               <!-- Personnal projects -->
                <h3 style="margin-top: 100px;">Personal projects</h3>
                <div id="personal" class="cardGroup"> 
                     <div class="card">
@@ -169,6 +178,7 @@
                               <a href="https://github.com/Bloom-Rvls/gessing_number_game.git">See code source </a>
                          </div>
                     </div>
+
                     <div class="card">
                          <img src="images/light-dark-mode/light_dark.jpg" alt="light dark mode">
                          <div class="card-title">
@@ -180,6 +190,7 @@
                               <a href="https://github.com/Bloom-Rvls/light_dark_mode.git">See code source </a>
                          </div>
                     </div>
+
                     <div class="card">
                          <img src="images/blog/blog.png" alt="image d'un blog">
                          <div class="card-title">
@@ -238,5 +249,6 @@
      </div>
 
      <script src="js/script.js"></script>
+     <script src="js/modal.js"></script>
 </body>
 </html>
