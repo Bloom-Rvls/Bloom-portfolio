@@ -219,24 +219,43 @@
                     </div>
      
                     <div id="contact-form">
-                         <form> 
+                         <form method="post"> 
                               <div class="fullBlock" id="text-area">
-                                   <textarea name="message" id="message" class="inputT" placeholder="Write your message here"></textarea>
+                                   <textarea name="message" id="message" class="inputT" placeholder="Write your message here" required></textarea>
                               </div>
                               <div class="smallBlock">
-                                   <input type="text" id="name" class="inputT" name="name" placeholder="Your name">
+                                   <input type="text" id="name" class="inputT" name="name" placeholder="Your name" required>
                               </div>
                               <div class="smallBlock">
-                                   <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress">
+                                   <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress" required>
                               </div>
                               <div class="fullBlock">
-                                   <input type="text" name="object" class="inputT" id="object" placeholder="Object">
+                                   <input type="text" name="object" class="inputT" id="object" placeholder="Object" required>
                               </div>
                               <div class="fullBlock">
                                    <input type="submit" value="Send" id="send-mail">
                               </div>
                          </form>
                     </div>
+                    <?php
+                         $recipient = 'angelicaravelonjohanison@gmail.com';
+                         $subject = $_POST['object'];
+                         $message = $_POST['message'];
+                         $headers = 'From : '. $_POST['mail'];
+
+                         if(isset($message) && isset($headers) && isset($subject)) {
+                              $return = mail($recipient, $subject, $message, $headers);
+                              if($return) {
+                                   echo <<<HTML
+                                        <p style="color:green;">Votre mail a été correctement envoyé</p>
+                                   HTML;
+                              }
+                              echo <<<HTML
+                                        <p style="color:red;">Erreur, mail non envoyé</p>
+                                   HTML;
+                         }
+
+                    ?>
                </div>
                
                

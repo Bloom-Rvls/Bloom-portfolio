@@ -301,7 +301,7 @@ section {
 /* -------------------------------------------- footer section ------------------------------------------------------*/
 #footer-section {
      margin: 20px 20px 0px 20px;
-     padding: 30px 10px 50px 10px;
+     padding: 30px 10px 10px 10px;
      display: flex;
      justify-content: space-evenly;
      flex-wrap: wrap-reverse;
@@ -333,10 +333,6 @@ section {
 #footer-section #contact-form .fullBlock {
      width: 90%;
      padding: 5px;
-}
-
-#footer-section #contact-form #text-area{
-     height: 50%;
 }
 
 #footer-section #contact-form textarea {
