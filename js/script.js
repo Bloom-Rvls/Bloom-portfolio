@@ -1,8 +1,8 @@
-function myFunction() {
-     let x = document.getElementById("nav-bar");
-     if (x === "nav-bar") {
-       x += " responsive";
+function responsiveNavBar() {
+     let x = document.getElementById("my-nav");
+     if (x.className === "myNav") {
+       x.className += " responsive";
      } else {
-       x = "nav-bar";
+       x.className = "myNav";
      }
 }

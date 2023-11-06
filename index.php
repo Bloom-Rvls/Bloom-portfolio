@@ -1,3 +1,50 @@
+
+<?php
+
+use App\Message;
+
+require_once 'src/Message.php';
+
+$errors = null;
+$success = null;
+
+$recipient = 'angelicaravelonjohanison@gmail.com';
+$subject = htmlentities($_POST['object']);
+$name = htmlentities($_POST['name']);
+$message = htmlentities($_POST['message']);
+$mail = $_POST['mail'];
+$headers = 'From : '. $_POST['mail'];
+
+if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
+     $userMail = new Message($name, $mail, $subject, $message);
+     if($userMail->isValid()) {
+          $return = mail($recipient, $subject, $message, $headers);
+          $success = true;
+     } else {
+          $errors = $userMail->getErrors();
+     }
+     
+}
+
+/* $recipient = 'angelicaravelonjohanison@gmail.com';
+$subject = $_POST['object'];
+$message = $_POST['message'];
+$headers = 'From : '. $_POST['mail'];
+
+if(isset($message) && isset($headers) && isset($subject)) {
+     $return = mail($recipient, $subject, $message, $headers);
+     if($return) {
+          echo <<<HTML
+               <p style="color:green;">Votre mail a été correctement envoyé</p>
+          HTML;
+     }
+     echo <<<HTML
+               <p style="color:red;">Erreur, mail non envoyé</p>
+          HTML; 
+     }*/
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +63,14 @@
                <div>
                     <h3 id="brand">Bloom</h3>
                </div>
-               <ul>
+               <ul class="myNav" id="my-nav">
                     <li class="navItem"><a href="#about-section" class="navLink">About</a></li>
                     <li class="navItem"><a href="#skills-section" class="navLink">Skills</a></li>
                     <li class="navItem"><a href="#diploma-certification" class="navLink">Certifications</a></li>
                     <li class="navItem"><a href="#projects-section" class="navLink">Projects</a></li>
                     <li class="navItem"><a href="#contact-section" class="navLink">Contact</a></li>
                     <li class="navItem iconBar">
-                         <a href="#"><i class="fa fa-bars"></i></a>
+                         <a href="#" ><i class="fa fa-bars" onclick="responsiveNavBar()"></i></a>
                     </li>
                </ul>
 
@@ -40,7 +87,7 @@
                          <p>Apart my passion for technology, I’m a big animal lovers too.</p>
                          <div id="cv-button">
                               <a href="files/CV_RAVELONJOHANISON_Angelica_10-2023.pdf" target="_blank">
-                                   <button>Download CV</button>
+                                   <button>View CV</button>
                               </a>
                          </div>
                     </div>
@@ -211,54 +258,55 @@
                <div id="section-title">
                     <h1>Contact me</h1>
                </div>
+
                <div id="footer-section">
-                    <div id="social-link">
-                         <a href="https://web.facebook.com/bloom.ravel" class="fa fa-facebook"></a>
-                         <a href="https://github.com/Bloom-Rvls" class="fa fa-github"></a>
-                         <a href="https://www.linkedin.com/in/ang%C3%A9lica-ravelonjohanison-b43185262/" class="fa fa-linkedin"></a>
-                    </div>
-     
-                    <div id="contact-form">
-                         <form method="post"> 
-                              <div class="fullBlock" id="text-area">
-                                   <textarea name="message" id="message" class="inputT" placeholder="Write your message here" required></textarea>
-                              </div>
-                              <div class="smallBlock">
-                                   <input type="text" id="name" class="inputT" name="name" placeholder="Your name" required>
-                              </div>
-                              <div class="smallBlock">
-                                   <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress" required>
-                              </div>
-                              <div class="fullBlock">
-                                   <input type="text" name="object" class="inputT" id="object" placeholder="Object" required>
-                              </div>
-                              <div class="fullBlock">
-                                   <input type="submit" value="Send" id="send-mail">
-                              </div>
-                         </form>
-                    </div>
-                    <?php
-                         $recipient = 'angelicaravelonjohanison@gmail.com';
-                         $subject = $_POST['object'];
-                         $message = $_POST['message'];
-                         $headers = 'From : '. $_POST['mail'];
 
-                         if(isset($message) && isset($headers) && isset($subject)) {
-                              $return = mail($recipient, $subject, $message, $headers);
-                              if($return) {
-                                   echo <<<HTML
-                                        <p style="color:green;">Votre mail a été correctement envoyé</p>
-                                   HTML;
-                              }
-                              echo <<<HTML
-                                        <p style="color:red;">Erreur, mail non envoyé</p>
-                                   HTML;
-                         }
+                    <?php if (!empty($errors)): ?>
+                         <div id="error">Erreur, mail non envoyé!</div>
+                    <?php endif; ?>
 
-                    ?>
-               </div>
-               
-               
+                    <?php if ($success): ?>
+                         <div id="success">Votre mail a bien été envoyé!</div>
+                    <?php endif; ?>
+
+                    <div id="contact-section">
+                         <div id="social-link">
+                              <a href="https://web.facebook.com/bloom.ravel" class="fa fa-facebook"></a>
+                              <a href="https://github.com/Bloom-Rvls" class="fa fa-github"></a>
+                              <a href="https://www.linkedin.com/in/ang%C3%A9lica-ravelonjohanison-b43185262/" class="fa fa-linkedin"></a>
+                         </div>
+          
+                         <div id="contact-form">
+                              <form method="post"> 
+                                   <div class="fullBlock" id="text-area">
+                                        <textarea name="message" id="message" class="inputT" placeholder="Write your message here" required></textarea>
+                                        <?php if(isset($errors['message'])): ?>
+                                             <div style="color: red; font-size:smaller;"><?= $errors['message']?></div>
+                                        <?php endif; ?>
+                                   </div>
+                                   <div class="smallBlock">
+                                        <input type="text" id="name" class="inputT" name="name" placeholder="Your name" required>
+                                        <?php if(isset($errors['name'])): ?>
+                                             <div style="color: red;font-size:smaller;"><?= $errors['name']?></div>
+                                        <?php endif; ?>
+                                   </div>
+                                   <div class="smallBlock">
+                                        <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress" required>
+                                   </div>
+                                   <div class="fullBlock">
+                                        <input type="text" name="object" class="inputT" id="object" placeholder="Object" required>
+                                        <?php if(isset($errors['object'])): ?>
+                                             <div style="color: red;font-size:smaller;"><?= $errors['object']?></div>
+                                        <?php endif; ?>
+                                   </div>
+                                   <div class="fullBlock">
+                                        <input type="submit" value="Send" id="send-mail">
+                                   </div>
+                              </form>
+                         </div>     
+                    </div>
+                    
+               </div>   
           </footer>
 
           <!-- ************************ back to top ***************************** -->
