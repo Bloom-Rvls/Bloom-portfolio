@@ -37,6 +37,9 @@ class Message {
           if(strlen($this->message) < self::LIMIT_MESSAGE) {
                $errors['message'] = 'Votre message est trop court';
           }
+          if (!filter_var($this->mail, FILTER_VALIDATE_EMAIL)) {
+               $errors['mail'] = 'Adresse e-mail invalide';
+          }
           return $errors;
      }
 }

@@ -275,6 +275,9 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
                                    </div>
                                    <div class="smallBlock">
                                         <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress" required>
+                                        <?php if(isset($errors['mail'])): ?>
+                                             <div style="color: red;font-size:smaller;"><?= $errors['mail']?></div>
+                                        <?php endif; ?>
                                    </div>
                                    <div class="fullBlock">
                                         <input type="text" name="object" class="inputT" id="object" placeholder="Object" required>
