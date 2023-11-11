@@ -26,23 +26,6 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
      
 }
 
-/* $recipient = 'angelicaravelonjohanison@gmail.com';
-$subject = $_POST['object'];
-$message = $_POST['message'];
-$headers = 'From : '. $_POST['mail'];
-
-if(isset($message) && isset($headers) && isset($subject)) {
-     $return = mail($recipient, $subject, $message, $headers);
-     if($return) {
-          echo <<<HTML
-               <p style="color:green;">Votre mail a été correctement envoyé</p>
-          HTML;
-     }
-     echo <<<HTML
-               <p style="color:red;">Erreur, mail non envoyé</p>
-          HTML; 
-     }*/
-
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +75,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                          </div>
                     </div>
                     <div>
-                         <img src="images/profil.jpg" alt="profil picture" id="profil">
+                         <img src="assets/images/profil.jpg" alt="profil picture" id="profil">
                     </div>
                </div>
                
@@ -106,46 +89,46 @@ if(isset($message) && isset($headers) && isset($subject)) {
                
                <div class="skills">
                     <div class="singleSkill">
-                         <img src="images/skills/html-5.png" alt="html icon" class="icon">
+                         <img src="assets/images/skills/html-5.png" alt="html icon" class="icon">
                          <p>HTML 5</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/css-3.png" alt="css icon" class="icon">
+                         <img src="assets/images/skills/css-3.png" alt="css icon" class="icon">
                          <p>CSS 3</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/js.png" alt="javascript icon" class="icon">
+                         <img src="assets/images/skills/js.png" alt="javascript icon" class="icon">
                          <p>JavaScript</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/Bootstrap_logo.png" alt="bootstrap icon" class="icon">
+                         <img src="assets/images/skills/Bootstrap_logo.png" alt="bootstrap icon" class="icon">
                          <p>Bootstrap 4</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/php (1).png" alt="php icon" class="icon">
+                         <img src="assets/images/skills/php (1).png" alt="php icon" class="icon">
                          <p>PHP</p>
                     </div>
                </div>
 
                <div class="skills">
                     <div class="singleSkill">
-                         <img src="images/skills/base-de-donnees.png" alt="sql icon" class="icon">
+                         <img src="assets/images/skills/base-de-donnees.png" alt="sql icon" class="icon">
                          <p>SQL</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/laravel-icon-497x512-uwybstke.png" alt="laravel icon" class="icon">
+                         <img src="assets/images/skills/laravel-icon-497x512-uwybstke.png" alt="laravel icon" class="icon">
                          <p>Laravel</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/mysql.png" alt="mysql icon" class="icon">
+                         <img src="assets/images/skills/mysql.png" alt="mysql icon" class="icon">
                          <p>Mysql</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/photoshop.png" alt="photoshop icon" class="icon">
+                         <img src="assets/images/skills/photoshop.png" alt="photoshop icon" class="icon">
                          <p>PhotoShop</p>
                     </div>
                     <div class="singleSkill">
-                         <img src="images/skills/inkscape-logo-2.png" alt="inkscape icon" class="icon">
+                         <img src="assets/images/skills/inkscape-logo-2.png" alt="inkscape icon" class="icon">
                          <p>Inkscape</p>
                     </div>
                </div>
@@ -159,11 +142,11 @@ if(isset($message) && isset($headers) && isset($subject)) {
                </div>
 
                <a href="https://drive.google.com/file/d/1-CS-AIFsZwghoXimtrjPlUs1ibm-PFG7/view?usp=drive_link" class="certificate">
-                    <img src="images/diplome.png" alt="" class="icon">
+                    <img src="assets/images/diplome.png" alt="" class="icon">
                     <p>Diplomas</p>
                </a>
                <a href="https://drive.google.com/file/d/1-Ap48xmqGLAfeiitK4sYjs0c_MYowLrg/view?usp=drive_link" class="certificate">
-                    <img src="images/certificat.png" alt="" class="icon">
+                    <img src="assets/images/certificat.png" alt="" class="icon">
                     <p>Certifications</p>
                </a>
           </section>
@@ -178,20 +161,19 @@ if(isset($message) && isset($headers) && isset($subject)) {
                <h3>Team projects</h3>
                <div id="team" class="cardGroup">
                     <div class="card">
-                         <img src="images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
+                         <img src="assets/images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
                          <div class="card-title">
                               <h4>Fantaro</h4>
                               <p class="techno"> Flutter  Dart</p>
                          </div>
                          <div class="card-content">
-                              
                               <p>Mobile application which inform its users about the dangers that may exist in the world and at the same time offers solutions.</p>
                               <a href="#">Download app </a>
                          </div>
                     </div>
 
                     <div class="card">
-                         <img src="images/trash/poubelle.jpg" alt="automatic trash">
+                         <img src="assets/images/trash/poubelle.jpg" alt="automatic trash">
                          <div class="card-title">
                               <h4>Automatic trash</h4>
                               <p class="techno"> Arduino  MIT app inventor</p>
@@ -206,7 +188,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                          <!-- Modal content -->
                          <div class="modal-content">
                            <span class="close">&times;</span>
-                           <video src="video/Zara_Larsson_-_Lush_Life_(Lyrics)(360p).mp4" controls></video>
+                           <video src="assets/video/Zara_Larsson_-_Lush_Life_(Lyrics)(360p).mp4" controls></video>
                          </div>
                     </div>
                </div>
@@ -215,7 +197,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                <h3 style="margin-top: 100px;">Personal projects</h3>
                <div id="personal" class="cardGroup"> 
                     <div class="card">
-                         <img src="images/gessing number/number-guessing-game.jpg" alt="gessing number game">
+                         <img src="assets/images/gessing number/number-guessing-game.jpg" alt="gessing number game">
                          <div class="card-title">
                               <h4>Gessing number game</h4>
                               <p class="techno"> Html 5  bootstrap 4  javasript</p>
@@ -227,7 +209,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                     </div>
 
                     <div class="card">
-                         <img src="images/light-dark-mode/light_dark.jpg" alt="light dark mode">
+                         <img src="assets/images/light-dark-mode/light_dark.jpg" alt="light dark mode">
                          <div class="card-title">
                               <h4>Light and dark mode</h4>
                               <p class="techno"> Html 5  bootstrap 4  javascript</p>
@@ -239,7 +221,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                     </div>
 
                     <div class="card">
-                         <img src="images/blog/blog.png" alt="image d'un blog">
+                         <img src="assets/images/blog/blog.png" alt="image d'un blog">
                          <div class="card-title">
                               <h4>Blog</h4>
                               <p class="techno"> Html 5  bootstrap 4  php sql  Mysql</p>
