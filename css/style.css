@@ -69,19 +69,15 @@ section {
           #nav-bar .iconBar .fa {
                color: white;
           }
-
-          .responsive {
+          .responsive .iconBar {
+               position: absolute;
+               
+          }
+          .responsive li {
+               display: block;
                position: relative;
-          }
-          .responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-          }
-          .responsive a {
-          float: none;
-          display: block;
-          text-align: left;
+               float: none;
+               text-align: left;
           }
      }
 
@@ -236,7 +232,7 @@ section {
 /* -------------------------------------------- projects section ------------------------------------------------------*/
 #projects-section .card {
      width: 30%;
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+     box-shadow: 0 0 10px 3px rgb(10, 15, 27);
      padding: 20px;
      margin: 10px;
      border-radius: 15px;
@@ -358,14 +354,19 @@ section {
 }
 
 #footer-section #social-link {
-     margin: 80px 0px 0px 0px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 50%;
 }
 
 
 #footer-section #contact-form{
-     display: flex;
-     justify-content: flex-end;
+     width: 50%;
      margin-bottom: 30px;
+     display: flex;
+     flex-wrap: wrap;
+
 }
 
 #footer-section #contact-form form {
@@ -373,7 +374,7 @@ section {
      flex-flow: row wrap;
      flex-wrap: wrap;
      justify-content: space-around;
-     width: 80%;
+     width: auto;
      padding: 5px;
 }
 
@@ -423,19 +424,25 @@ section {
 #footer-section #error {
      display: flex;
      justify-content: center;
+     align-items: center;
      background-color: rgb(226, 161, 161);
      border-radius: 5px;
-     margin: 50px;
+     height: 35px;
+     margin: 10px 0px 50px 0px;
      color: red;
+     font-size: smaller;
 }
 
 #footer-section #success {
      display: flex;
      justify-content: center;
+     align-items: center;
      background-color: rgb(161, 226, 183);
      border-radius: 5px;
-     margin: 50px;
+     margin: 10px 0px 50px 0px;
+     height: 35px;
      color: green;
+     font-size: smaller;
 }
 
      /* for mobile phones*/
@@ -443,6 +450,12 @@ section {
      #footer-section #contact-form{
           display: flex;
           justify-content: center;
+          width: 100%;
+
+     }
+
+     #footer-section #social-link {
+          width: 100%;
      }
 
      #footer-section #contact-form form {

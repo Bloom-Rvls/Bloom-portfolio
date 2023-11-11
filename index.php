@@ -262,11 +262,11 @@ if(isset($message) && isset($headers) && isset($subject)) {
                <div id="footer-section">
 
                     <?php if (!empty($errors)): ?>
-                         <div id="error">Erreur, mail non envoyé!</div>
+                         <p id="error">Erreur, mail non envoyé!</p>
                     <?php endif; ?>
 
                     <?php if ($success): ?>
-                         <div id="success">Votre mail a bien été envoyé!</div>
+                         <p id="success">Votre mail a bien été envoyé!</p>
                     <?php endif; ?>
 
                     <div id="contact-section">
@@ -277,6 +277,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                          </div>
           
                          <div id="contact-form">
+
                               <form method="post"> 
                                    <div class="fullBlock" id="text-area">
                                         <textarea name="message" id="message" class="inputT" placeholder="Write your message here" required></textarea>
