@@ -86,7 +86,7 @@ if(isset($message) && isset($headers) && isset($subject)) {
                          <p>I have always been passionate about technology and everything surrounded it.</p>
                          <p>Apart my passion for technology, I’m a big animal lovers too.</p>
                          <div id="cv-button">
-                              <a href="files/CV_RAVELONJOHANISON_Angelica_10-2023.pdf" target="_blank">
+                              <a href="https://drive.google.com/file/d/1BJx4tUijyMZIDk-W76M1t0chvqpnAxdF/view?usp=drive_link" target="_blank">
                                    <button>View CV</button>
                               </a>
                          </div>
@@ -158,11 +158,11 @@ if(isset($message) && isset($headers) && isset($subject)) {
                     <h1>Diplomas and certifications</h1>
                </div>
 
-               <a href="#" class="certificate">
+               <a href="https://drive.google.com/file/d/1-CS-AIFsZwghoXimtrjPlUs1ibm-PFG7/view?usp=drive_link" class="certificate">
                     <img src="images/diplome.png" alt="" class="icon">
                     <p>Diplomas</p>
                </a>
-               <a href="#" class="certificate">
+               <a href="https://drive.google.com/file/d/1-Ap48xmqGLAfeiitK4sYjs0c_MYowLrg/view?usp=drive_link" class="certificate">
                     <img src="images/certificat.png" alt="" class="icon">
                     <p>Certifications</p>
                </a>
