@@ -66,20 +66,19 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
      <div id="container">
           <!-- ************************ navigation bar ***************************** -->
           <nav id="nav-bar">
-               <div>
-                    <h3 id="brand">Bloom</h3>
+               <div id="brand">
+                    <h3>Bloom</h3>
                </div>
                <ul class="myNav" id="my-nav">
                     <li class="navItem"><a href="#about-section" class="navLink">About</a></li>
                     <li class="navItem"><a href="#skills-section" class="navLink">Skills</a></li>
-                    <li class="navItem"><a href="#diploma-certification" class="navLink">Certifications</a></li>
                     <li class="navItem"><a href="#projects-section" class="navLink">Projects</a></li>
                     <li class="navItem"><a href="#contact-section" class="navLink">Contact</a></li>
-                    <li class="navItem iconBar">
-                         <a href="#" ><i class="fa fa-bars" onclick="responsiveNavBar()"></i></a>
-                    </li>
+                    <li class="navItem"><a href="#diploma-certification" class="navLink">Certifications</a></li>
                </ul>
-
+               <div class="iconBar">
+                    <a href="#" id="icon-link"><i class="fa fa-bars" ></i></a>
+               </div>
           </nav>
 
           <!-- ************************ header section ***************************** -->

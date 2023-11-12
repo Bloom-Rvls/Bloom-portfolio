@@ -1,18 +1,17 @@
-function responsiveNavBar() {
-  let x = document.getElementById("my-nav");
-  if (x.className === "myNav") {
-    x.className += " responsive";
+//responsive navigation script
+const menu = document.getElementById('icon-link');
+const menuList = document.getElementById('my-nav');
+
+menu.addEventListener ("click", () => {
+  if (menuList.className === "myNav") {
+    menuList.className += " active";
   } else {
-    x.className = "myNav";
+    menuList.className = "myNav";
   }
-}
+  
+});
 
 //loader script
-/*const load = document.getElementById("loader");
-function loadfun() {
-  load.style.display = 'none';
-}*/
-
 window.onload = function(){
 
   document.getElementById("loader").style.display = "none";
