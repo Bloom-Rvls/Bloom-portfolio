@@ -36,9 +36,32 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/loader.css">
      <title>Bloom</title>
 </head>
 <body>
+     <!-- ************************ pre-loader ***************************** -->
+     <div id="loader">
+          <div class="loader-inner">
+               <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+               </div>
+               <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+               </div>
+               <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+               </div>
+               <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+               </div>
+               <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+               </div>
+          </div>
+     </div>
+
+
      <!-- ************************ all content container ***************************** -->
      <div id="container">
           <!-- ************************ navigation bar ***************************** -->
