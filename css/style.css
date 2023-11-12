@@ -74,8 +74,12 @@ section {
           #nav-bar .iconBar {
                display: block;
                position: absolute;
-               right: 50px;
-               top: 65px;
+               right: 60px;
+               top: 55px;
+          }
+
+          #nav-bar ul li, #brand {
+               font-size: 20px;
           }
      
      }
