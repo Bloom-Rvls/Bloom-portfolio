@@ -190,7 +190,7 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
                          </div>
                          <div class="card-content">
                               <p>Mobile application which inform its users about the dangers that may exist in the world and at the same time offers solutions.</p>
-                              <a href="https://drive.google.com/file/d/1-xtpnL9Y3crXrQH8XDLca1JxanteAsDO/view?usp=drive_link">Download app </a>
+                              <a href="https://drive.google.com/file/d/10-l8FQCesYapyUW8Mpqg2oKfGfFZFXax/view?usp=drive_link">Download app </a>
                          </div>
                     </div>
 
