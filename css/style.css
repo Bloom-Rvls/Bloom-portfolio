@@ -359,6 +359,9 @@ section {
           border-radius: 20px;
           width: 100%; 
      }
+     .modal-content video {
+          height: 250px;
+     }
 }
 
 

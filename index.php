@@ -8,7 +8,7 @@ require_once 'src/Message.php';
 $errors = null;
 $success = null;
 
-$recipient = 'angelicaravelonjohanison@gmail.com';
+$to = 'angelicaravelonjohanison@gmail.com';
 $subject = htmlentities($_POST['object']);
 $name = htmlentities($_POST['name']);
 $message = htmlentities($_POST['message']);
@@ -18,7 +18,7 @@ $headers = 'From : '. $_POST['mail'];
 if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
      $userMail = new Message($name, $mail, $subject, $message);
      if($userMail->isValid()) {
-          $return = mail($recipient, $subject, $message, $headers);
+          $return = mail($to, $subject, $message, $headers);
           $success = true;
      } else {
           $errors = $userMail->getErrors();
@@ -190,7 +190,7 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
                          </div>
                          <div class="card-content">
                               <p>Mobile application which inform its users about the dangers that may exist in the world and at the same time offers solutions.</p>
-                              <a href="#">Download app </a>
+                              <a href="https://drive.google.com/file/d/1-xtpnL9Y3crXrQH8XDLca1JxanteAsDO/view?usp=drive_link">Download app </a>
                          </div>
                     </div>
 
@@ -210,7 +210,7 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
                          <!-- Modal content -->
                          <div class="modal-content">
                            <span class="close">&times;</span>
-                           <video src="assets/video/Zara_Larsson_-_Lush_Life_(Lyrics)(360p).mp4" controls></video>
+                           <video src="assets/video/VID20211024103554.mp4" height="450" controls></video>
                          </div>
                     </div>
                </div>
