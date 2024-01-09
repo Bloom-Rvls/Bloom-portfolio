@@ -1,33 +1,3 @@
-
-<?php
-
-use App\Message;
-
-require_once 'src/Message.php';
-
-$errors = null;
-$success = null;
-
-$to = 'angelicaravelonjohanison@gmail.com';
-$subject = htmlentities($_POST['object']);
-$name = htmlentities($_POST['name']);
-$message = htmlentities($_POST['message']);
-$mail = $_POST['mail'];
-$headers = 'From : '. $_POST['mail'];
-
-if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
-     $userMail = new Message($name, $mail, $subject, $message);
-     if($userMail->isValid()) {
-          $return = mail($to, $subject, $message, $headers);
-          $success = true;
-     } else {
-          $errors = $userMail->getErrors();
-     }
-     
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -264,15 +234,6 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
                </div>
 
                <div id="footer-section">
-
-                    <?php if (!empty($errors)): ?>
-                         <p id="error">Erreur, mail non envoyé!</p>
-                    <?php endif; ?>
-
-                    <?php if ($success): ?>
-                         <p id="success">Votre mail a bien été envoyé!</p>
-                    <?php endif; ?>
-
                     <div id="contact-section">
                          <div id="social-link">
                               <a href="https://web.facebook.com/bloom.ravel" class="fa fa-facebook"></a>
@@ -285,27 +246,15 @@ if(isset($name) && isset($message) && isset($mail) && isset($subject)) {
                               <form method="post"> 
                                    <div class="fullBlock" id="text-area">
                                         <textarea name="message" id="message" class="inputT" placeholder="Write your message here" required></textarea>
-                                        <?php if(isset($errors['message'])): ?>
-                                             <div style="color: red; font-size:smaller;"><?= $errors['message']?></div>
-                                        <?php endif; ?>
                                    </div>
                                    <div class="smallBlock">
                                         <input type="text" id="name" class="inputT" name="name" placeholder="Your name" required>
-                                        <?php if(isset($errors['name'])): ?>
-                                             <div style="color: red;font-size:smaller;"><?= $errors['name']?></div>
-                                        <?php endif; ?>
                                    </div>
                                    <div class="smallBlock">
                                         <input type="email" name="mail" class="inputT" id="mail" placeholder="Mail adress" required>
-                                        <?php if(isset($errors['mail'])): ?>
-                                             <div style="color: red;font-size:smaller;"><?= $errors['mail']?></div>
-                                        <?php endif; ?>
                                    </div>
                                    <div class="fullBlock">
                                         <input type="text" name="object" class="inputT" id="object" placeholder="Object" required>
-                                        <?php if(isset($errors['object'])): ?>
-                                             <div style="color: red;font-size:smaller;"><?= $errors['object']?></div>
-                                        <?php endif; ?>
                                    </div>
                                    <div class="fullBlock">
                                         <input type="submit" value="Send" id="send-mail">
