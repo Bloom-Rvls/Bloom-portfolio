@@ -1,8 +1,3 @@
-
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,12 +37,13 @@
           <!-- ************************ navigation bar ***************************** -->
           <nav id="nav-bar">
                <div id="brand">
-                    <h3>Bloom</h3>
+                    <a href="#homepage" class="navLink"><h3>Bloom</h3></a>
                </div>
                <ul class="myNav" id="my-nav">
-                    <li class="navItem"><a href="#about-section" class="navLink">About</a></li>
-                    <li class="navItem"><a href="#skills-section" class="navLink">Skills</a></li>
-                    <li class="navItem"><a href="#projects-section" class="navLink">Projects</a></li>
+                    <li class="navItem"><a href="#homepage" class="navLink">Accueil</a></li>
+                    <li class="navItem"><a href="#about-section" class="navLink">A propos</a></li>
+                    <li class="navItem"><a href="#skills-section" class="navLink">Compétences</a></li>
+                    <li class="navItem"><a href="#projects-section" class="navLink">Projets</a></li>
                     <li class="navItem"><a href="#contact-section" class="navLink">Contact</a></li>
                     <li class="navItem"><a href="#diploma-certification" class="navLink">Certifications</a></li>
                </ul>
@@ -61,13 +57,13 @@
                
                <div id="about-content">
                     <div id="about-me">
-                         <h2>Hi there, welcome here!</h2>
-                         <p>I’m <span class="about">Angélica</span>, I’m a <span class="about">junior backend developer</span> and I’m a second master’s degree student in computer siences  from Madagascar.</p>
-                         <p>I have always been passionate about technology and everything surrounded it.</p>
-                         <p>Apart my passion for technology, I’m a big animal lovers too.</p>
+                         <h2>Bonjour, bienvenue à vous!</h2>
+                         <p>Je m'appelle <span class="about">Angélica</span>, ja suis <span class="about">développeuse backend junior</span> et je suis actuellement en deuxième année de Master en informatique à Madagascar.</p>
+                         <p>J'ai toujours été passionnée par la technologie et tout ce qui l'entour.</p>
+                         <p>Appart ma passion pour la technologie, je possède une affection particulière pour les animaux et la lecture.</p>
                          <div id="cv-button">
                               <a href="https://drive.google.com/file/d/1BJx4tUijyMZIDk-W76M1t0chvqpnAxdF/view?usp=drive_link" target="_blank">
-                                   <button>View CV</button>
+                                   <button>Télécharger mon CV</button>
                               </a>
                          </div>
                     </div>
@@ -81,7 +77,7 @@
           <!-- ************************ skills section ***************************** -->
           <section id="skills-section">
                <div id="section-title">
-                    <h1>Skills</h1>
+                    <h1>Compétences</h1>
                </div>
                
                <div class="skills">
@@ -135,12 +131,12 @@
           <!-- ************************ dimploma and certification ***************************** -->
           <section id="diploma-certification">
                <div id="section-title">
-                    <h1>Diplomas and certifications</h1>
+                    <h1>Diplômes et certifications</h1>
                </div>
 
                <a href="https://drive.google.com/file/d/1-CS-AIFsZwghoXimtrjPlUs1ibm-PFG7/view?usp=drive_link" class="certificate">
                     <img src="assets/images/diplome.png" alt="" class="icon">
-                    <p>Diplomas</p>
+                    <p>Diplômes</p>
                </a>
                <a href="https://drive.google.com/file/d/1-Ap48xmqGLAfeiitK4sYjs0c_MYowLrg/view?usp=drive_link" class="certificate">
                     <img src="assets/images/certificat.png" alt="" class="icon">
@@ -151,11 +147,11 @@
           <!-- ************************ projects section ***************************** -->
           <section id="projects-section">
                <div id="section-title">
-                    <h1>Recent projects</h1>
+                    <h1>Projets récent</h1>
                </div>
                
                <!-- Team projects -->
-               <h3>Team projects</h3>
+               <h3>Projets en équipe</h3>
                <div id="team" class="cardGroup">
                     <div class="card">
                          <img src="assets/images/fantaro/Logo FANTARO.jpeg" alt="fantaro">
@@ -164,20 +160,20 @@
                               <p class="techno"> Flutter  Dart</p>
                          </div>
                          <div class="card-content">
-                              <p>Mobile application which inform its users about the dangers that may exist in the world and at the same time offers solutions.</p>
-                              <a href="#">Download app </a>
+                              <p>Application mobile qui vise principalement à informer ses utilisateurs des dangers qui peuvent exister à travers le monde et en même temps d'offrir des solutions pour y remédier.</p>
+                              <a href="#">Télécharger l'application </a>
                          </div>
                     </div>
 
                     <div class="card">
                          <img src="assets/images/trash/poubelle.jpg" alt="automatic trash">
                          <div class="card-title">
-                              <h4>Automatic trash</h4>
+                              <h4>Poubelle automatique et commandée</h4>
                               <p class="techno"> Arduino  MIT app inventor</p>
                          </div>
                          <div class="card-content">
-                              <p>A trash which can open automatically at a certain distance and close automatically after a while. It can also be commanded by a special mobile application that we made with MIT app inventor. </p>
-                              <a href="#myModal" id="modalLink">View demo </a>
+                              <p>Une poubelle qui s'ouvre automatiquement lorsqu'on s'en approche à une certaine distance et qui se ferme automatiquement après un certain laps de temps. Elle peut également être commander à distance via une application mobile conçue avec MIT app inventor. </p>
+                              <a href="#myModal" id="modalLink">Démonstration </a>
                          </div>
                     </div>
 
@@ -185,13 +181,13 @@
                          <!-- Modal content -->
                          <div class="modal-content">
                            <span class="close">&times;</span>
-                           <video src="assets/video/Zara_Larsson_-_Lush_Life_(Lyrics)(360p).mp4" controls></video>
+                           <video src="assets/video/VID20211024103554.mp4" controls></video>
                          </div>
                     </div>
                </div>
 
                <!-- Personnal projects -->
-               <h3 style="margin-top: 100px;">Personal projects</h3>
+               <h3 style="margin-top: 100px;">Projets personnel</h3>
                <div id="personal" class="cardGroup"> 
                     <div class="card">
                          <img src="assets/images/gessing number/number-guessing-game.jpg" alt="gessing number game">
@@ -200,8 +196,9 @@
                               <p class="techno"> Html 5  bootstrap 4  javasript</p>
                          </div>
                          <div class="card-content">
-                              <p>A little game which invited people to find a mysterious number between 1 and 10  in free try otherwise they lose. </p>
-                              <a href="https://github.com/Bloom-Rvls/gessing_number_game.git">See code source </a>
+                              <p>Un jeux qui consiste à deviner un mystérieux nombre entre 1 et 10 en seulement 3 essais </p>
+                              <a href="https://github.com/Bloom-Rvls/gessing_number_game.git">Démonstration</a>
+                              <a href="https://github.com/Bloom-Rvls/gessing_number_game.git">Code source </a>
                          </div>
                     </div>
 
@@ -212,8 +209,9 @@
                               <p class="techno"> Html 5  bootstrap 4  javascript</p>
                          </div>
                          <div class="card-content">
-                              <p>A little light and dark mode system made principaly with javaScript. The user just have to select an option to chage the color mode. </p>
-                              <a href="https://github.com/Bloom-Rvls/light_dark_mode.git">See code source </a>
+                              <p>Un petit système ayant un thème éclairé et un thème sombre fait principalement avec du javascript, l'utilisateur a juste à séléctionner une option pour passer d'un mode à un autre. </p>
+                              <a href="https://github.com/Bloom-Rvls/light_dark_mode.git">Démonstration </a>
+                              <a href="https://github.com/Bloom-Rvls/light_dark_mode.git">Code source </a>
                          </div>
                     </div>
 
@@ -224,8 +222,8 @@
                               <p class="techno"> Html 5  bootstrap 4  php sql  Mysql</p>
                          </div>
                          <div class="card-content">
-                              <p>A web site made principaly with php which show a list of all articles sotcked in a database, details of each article and have an administration system within we can create new article, modify or delete an existing article. </p>
-                              <a href="https://github.com/Bloom-Rvls/Blog-project.git">See code source </a>
+                              <p>Un site web fait principalement avec du PHP qui affiche une liste de tout les articles stockés dans la base de données, les détails de chaque article ainsi que les catégories. Le site possède également un système d'administration qui permet aux administrateurs d'ajouter de nouveaux articles, d'en modifier et d'en supprimer. </p>
+                              <a href="https://github.com/Bloom-Rvls/Blog-project.git">Code source </a>
                          </div>
                     </div>
                </div>
@@ -235,7 +233,7 @@
           <!-- ************************ footer ***************************** -->
           <footer>
                <div id="section-title">
-                    <h1>Contact me</h1>
+                    <h1>Me contacter</h1>
                </div>
 
                <div id="footer-section">
