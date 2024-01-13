@@ -212,6 +212,10 @@ body {
 
      /* for mobile phones*/
      @media (max-width: 768px) {
+          #about-section {
+               padding: 0 20px;
+          }
+
           #about-me h2 {
                font-size: 50px;
                color: rgb(14, 165, 233);
@@ -308,6 +312,7 @@ body {
 #projects-section .card {
      width: 30%;
      box-shadow: 0 0 10px 3px rgb(10, 15, 27);
+     background-color: white;
      padding: 20px;
      margin: 10px;
      border-radius: 15px;
@@ -393,7 +398,8 @@ body {
 @media (max-width: 768px) {
      #projects-section .card {
           width: 100%;
-          background-color: rgb(30, 41, 59);
+          background-color: white;
+          color: black;
           padding: 20px;
           margin: 10px;
           border-radius: 15px;
