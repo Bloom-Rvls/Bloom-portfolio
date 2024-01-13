@@ -7,33 +7,84 @@ html {
 }
 body {
      margin: 0;
-     color: white;
-     background-color: rgb(22, 30, 49);
+     /*color: white;*/
+     background-color: #F6F7F9;
      font-size: larger;
 }
-#container {
-     width: 70%;
+.container {
+     width: 80%;
      margin: auto;
 }
-section {
+/*section {
      margin: 70px 0 70px 0;
-}
+}*/
 
 #section-title {
-     margin: 100px 0px 100px 0px;
+     margin: 0 0 70px 0;
 }
 
 #section-title h1 {
      font-size: 50px;
-     color: rgb(14, 165, 233);;
+     color: rgb(14, 165, 233);
 }
+
+.bg-blue {
+     background-color: rgb(14, 165, 233);
+     color: white;
+}
+
+.text-blue {
+     color: rgb(14, 165, 233);
+}
+
+.d-flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.bg-white {
+     background-color: white;
+}
+
+     /* for mobile phones*/
+     @media (max-width: 768px) {
+          .container {
+               width: auto;
+               margin: 0 10px;
+          }
+
+          html, body {
+               overflow-x: hidden;
+          }
+
+          body {
+               position: relative;
+          }
+
+     }
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
 #nav-bar {
-     margin: 30px 0 100px 0 ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100px;
+     background-color: white;
+}
+
+#nav-bar .navbarContainer {
+     
      display: flex;
      justify-content: space-between;
 }
+
+#navbar .navigationList {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
 #nav-bar ul {
      list-style-type: none;
      display: flex;
@@ -48,7 +99,7 @@ section {
 .navLink {
      text-decoration: none;
      font-weight: bold;
-     color: white;
+     color: black;
      padding: 15px;
 }
 
@@ -61,7 +112,7 @@ section {
 }
 
 #nav-bar .iconBar .fa {
-     color: white;
+     color: black;
 }
 
 
@@ -124,8 +175,6 @@ section {
 }
 
 #about-me h2 {
-     font-size: 60px;
-     color: rgb(14, 165, 233);
      margin-bottom: 100px ;
 }
 
@@ -134,7 +183,6 @@ section {
 }
 
 #about-me .about {
-     color: rgb(14, 165, 233);
      font-weight: bold;
 }
 
@@ -224,6 +272,9 @@ section {
 }
 
 /* -------------------------------------------- diploma and certification ------------------------------------------------------*/
+#diploma-certification {
+     padding: 30px 0 50px 0;
+}
 
 .certificate {
      display: flex;
@@ -235,7 +286,7 @@ section {
      height: 100px;
      border-radius: 20px;
      text-align: center;
-     color: white;
+     color: black;
      font-weight: bolder;
      font-size: larger;
 }
@@ -366,12 +417,8 @@ section {
 
 
 /* -------------------------------------------- footer section ------------------------------------------------------*/
-#footer-section {
-     margin: 20px 20px 0px 20px;
-     padding: 30px 10px 10px 10px;
-     background-color: rgb(10, 15, 27);
-     border-radius: 10px;
-     height: 100%;
+footer {
+     background-color: white;
 }
 
 #footer-section #contact-section {
@@ -536,19 +583,28 @@ section {
           }
      }
 
+
+
+.copyright {
+     padding: 30px 0;
+     text-align: center;
+     background-color: rgb(10, 15, 27);
+     color: white;
+}
+
+
 /* -------------------------------------------- back to top ------------------------------------------------------*/
 
 #back-to-top {
-     font-size: 70px;
+     font-size: 40px;
      color: white;
+     background-color: rgb(14, 165, 233);
      position: fixed;
      bottom: 10px;
      right: 100px;
      border-radius: 100%;
-     width: 80px;
-     height: 80px;
-     text-align: center;
-     box-shadow: 0 0 10px 3px rgb(10, 15, 27);
+     width: 50px;
+     height: 50px;
 }
 
      /* for mobile phones*/
