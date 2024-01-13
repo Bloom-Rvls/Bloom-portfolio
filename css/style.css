@@ -19,13 +19,13 @@ body {
      margin: 70px 0 70px 0;
 }*/
 
-#section-title {
+.section-title {
      margin: 0 0 70px 0;
 }
 
-#section-title h1 {
+section h1 {
      font-size: 50px;
-     color: rgb(14, 165, 233);
+     color: rgb(61, 68, 71);
 }
 
 .bg-blue {
@@ -62,6 +62,11 @@ body {
                position: relative;
           }
 
+          section h1 {
+               font-size: 30px;
+               color: rgb(61, 68, 71);
+          }
+
      }
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
@@ -74,9 +79,12 @@ body {
 }
 
 #nav-bar .navbarContainer {
-     
      display: flex;
      justify-content: space-between;
+}
+
+#nav-bar .navbarContainer a {
+     font-size: 25px;
 }
 
 #navbar .navigationList {
@@ -92,8 +100,9 @@ body {
      align-items: center;
 }
 
-#nav-bar ul li, #brand {
-     font-size: 25px;
+#nav-bar ul li, #brand a{
+     font-weight: bold;
+     text-decoration: none;
 }
 
 .navLink {
@@ -104,7 +113,13 @@ body {
 }
 
 .navLink:hover {
-     text-decoration: underline;
+     border-bottom: solid 1px rgb(14, 165, 233);
+     color: rgb(14, 165, 233);
+}
+
+.navLink:active {
+     border-bottom: solid 1px rgb(14, 165, 233);
+     color: rgb(14, 165, 233);
 }
 
 #nav-bar .iconBar {
@@ -241,11 +256,6 @@ body {
      }
 
 /* -------------------------------------------- skills section ------------------------------------------------------*/
-#skills-section .icon {
-     margin-top: 10px;
-     width: 80px;
-     height: 80px;
-}
 
 #skills-section .skills {
      display: flex;
@@ -259,21 +269,57 @@ body {
      height: 150px;
      border-radius: 5px;
      display: flex;
-     justify-content: space-evenly;
-     flex-direction: column;
+     justify-content: center;
+     /*justify-content: space-evenly;
+     flex-direction: column;*/
      align-items: center;
      margin: 10px;
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+#skills-section .singleSkill .skill-w {
+     max-width: 80%;
+     width: 100%;
+     text-align: center;
+}
+
+#skills-section .skill-w .icon {
+     margin-top: 10px;
+     max-width: 80px;
+     width: 100%;
+     
+}
+
 #skills-section .singleSkill:hover {
      transform: scale(1.5);
-    transition: 0.5s;
+     transition: 0.5s;
 }
 
 #skills-section .singleSkill p {
      font-weight: bold;
 }
+
+      /* for mobile phones*/
+     @media (max-width: 768px) {
+          #skills-section .skills {
+               margin: 0;
+          }
+
+          #skills-section .singleSkill {
+               width: 80px;
+               height: 80px;
+          }
+
+          #skills-section .skill-w .icon {
+               width: 70%;
+               
+          }
+
+          #skills-section .singleSkill .skill-w p{
+               font-size: 13px;
+               margin: 0;
+          }
+     }
 
 /* -------------------------------------------- diploma and certification ------------------------------------------------------*/
 #diploma-certification {
@@ -311,7 +357,7 @@ body {
 /* -------------------------------------------- projects section ------------------------------------------------------*/
 #projects-section .card {
      width: 30%;
-     box-shadow: 0 0 10px 3px rgb(10, 15, 27);
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
      background-color: white;
      padding: 20px;
      margin: 10px;
@@ -336,7 +382,7 @@ body {
 
 #projects-section .card img {
      max-width: 100%;
-     max-height: 100%;
+     
 }
 
 #projects-section .cardGroup {
@@ -427,139 +473,33 @@ footer {
      background-color: white;
 }
 
-#footer-section #contact-section {
+footer .container {
      display: flex;
-     justify-content: space-evenly;
-     flex-wrap: wrap-reverse;
+     justify-content: space-between;
 }
 
-#footer-section #social-link {
+/*footer .container h3{
+     text-align: center;
+}*/
+
+
+/*footer #social-link {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
      width: 50%;
-}
-
-
-#footer-section #contact-form{
-     width: 50%;
-     margin-bottom: 30px;
-     display: flex;
-     flex-wrap: wrap;
-
-}
-
-#footer-section #contact-form form {
-     display: flex;
-     flex-flow: row wrap;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     width: auto;
-     padding: 5px;
-}
-
-#footer-section #contact-form .fullBlock {
-     width: 90%;
-     padding: 5px;
-}
-
-#footer-section #contact-form textarea {
-     height: 100%;
-     width: 100%;
-     padding: 10px;
-     background-color: rgb(10, 15, 27);
-     border-top: none;
-     border-left: none;
-     border-right: none; 
-}
-
-#footer-section #contact-form .smallBlock {
-     width: 40%;
-     padding: 5px;
-}
-
-#footer-section #contact-form .inputT {
-     display: block;
-     padding: 10px;
-     height: 40px;
-     width: 100%;
-     background-color: rgb(10, 15, 27);
-     border-top: none;
-     border-left: none;
-     border-right: none; 
-     color: white;
-}
-
-#footer-section #send-mail {
-     width: 100%;
-     height: 40px;
-     font-size: large;
-     border-radius: 5px;
-     color: white;
-     background-color: rgb(14, 165, 233);  
-     border: solid rgb(14, 165, 233) 2px;
-     font-weight: bold;
-}
-
-#footer-section #error {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-color: rgb(226, 161, 161);
-     border-radius: 5px;
-     height: 35px;
-     margin: 10px 0px 50px 0px;
-     color: red;
-     font-size: smaller;
-}
-
-#footer-section #success {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-color: rgb(161, 226, 183);
-     border-radius: 5px;
-     margin: 10px 0px 50px 0px;
-     height: 35px;
-     color: green;
-     font-size: smaller;
-}
+}*/
 
      /* for mobile phones*/
 @media (max-width: 768px) {
-     #footer-section #contact-form{
-          display: flex;
-          justify-content: center;
-          width: 100%;
 
-     }
-
-     #footer-section #social-link {
+     footer #social-link {
           width: 100%;
-     }
-
-     #footer-section #contact-form form {
-          display: flex;
-          flex-flow: row wrap;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          width: 100%;
-          padding: 5px;
-     }
-
-     #footer-section #contact-form .fullBlock {
-          width: 100%;
-          padding: 5px;
-     }
-     
-     #footer-section #contact-form .smallBlock {
-          width: 100%;
-          padding: 5px;
      }
 
 }
 
-#footer-section .fa {
+footer .fa {
      margin: 20px;
      padding: 7px 7px 7px 7px;
      font-size: 50px;
@@ -567,17 +507,14 @@ footer {
      height: 60px;
      text-align: center;
      text-decoration: none;
-     color: white;
+     color: rgb(14, 165, 233);
 }
 
 
      /* for mobile phones*/
      @media (max-width: 768px) {
-          #footer-section {
-               width: 100%;
-          }
 
-          #footer-section .fa {
+          footer .fa {
                margin: 20px;
                padding: 7px 7px 7px 7px;
                font-size: 40px;
