@@ -19,11 +19,8 @@ body {
      margin: 70px 0 70px 0;
 }*/
 
-.section-title {
-     margin: 0 0 70px 0;
-}
-
 section h1 {
+     margin: 0;
      font-size: 50px;
      color: rgb(61, 68, 71);
 }
@@ -71,16 +68,24 @@ section h1 {
 
 /* -------------------------------------------- Navigation ------------------------------------------------------*/
 #nav-bar {
-     display: flex;
+     /*display: flex;
      justify-content: center;
      align-items: center;
-     height: 100px;
+     height: 100px;*/
      background-color: white;
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 #nav-bar .navbarContainer {
      display: flex;
      justify-content: space-between;
+     align-items: center;
+     height: 100px;
 }
 
 #nav-bar .navbarContainer a {
