@@ -260,6 +260,30 @@ section h1 {
           }
      }
 
+/* -------------------------------------------- expériences section ------------------------------------------------------*/
+#experiences-section .card-wrapper {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+#experiences-section .card-wrapper .card {
+     width: 45%;
+     margin: 10px 0;
+}
+
+#experiences-section .volunteering .card img {
+     width: 100%;
+     object-fit: contain;
+}
+
+     /* for mobile phones*/
+     @media (max-width: 768px) {
+          #experiences-section .card-wrapper .card {
+               width: 100%;
+          }
+     }
+
 /* -------------------------------------------- skills section ------------------------------------------------------*/
 
 #skills-section .skills {
