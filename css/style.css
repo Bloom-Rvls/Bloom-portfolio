@@ -211,6 +211,49 @@ section h2 {
      flex-wrap: wrap;
 }
 
+.banner-section .content-wrapper .banner-description {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.banner-section .content-wrapper .banner-description  h1 {
+          font-size: 60px;
+}
+
+.banner-section .content-wrapper .banner-description  span {
+          text-transform: uppercase;
+}
+
+.banner-section .content-wrapper .banner-description  p {
+          font-size: 50px;
+          color: rgb(14, 165, 233);
+          font-weight: bold;
+}
+
+.banner-section .content-wrapper .banner-img {
+     max-width: 700px;
+     width: 100%;
+}
+
+.banner-section .content-wrapper .banner-img img {
+     width: 100%;
+}
+
+     @media (max-width: 768px) {
+          .banner-section .content-wrapper .banner-description  h1 {
+               font-size: 40px;
+               text-align: center;
+          }
+
+          .banner-section .content-wrapper .banner-description  p {
+               font-size: 30px;
+               text-align: center;
+          }
+     
+     }
+
 
 /* -------------------------------------------- About section ------------------------------------------------------*/
 
