@@ -285,6 +285,11 @@ section h2 {
 #experiences-section .card-wrapper .card {
      width: 45%;
      margin: 10px 0;
+     padding: 25px;
+}
+
+#experiences-section .card-wrapper .card h4 {
+     text-transform: uppercase;
 }
 
 #experiences-section .volunteering .card img {
