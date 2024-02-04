@@ -202,10 +202,6 @@ section h2 {
 
 
 /* -------------------------------------------- About section ------------------------------------------------------*/
-#about-section {
-     margin-top: 10px;
-     margin-bottom: 100px;
-}
 
 #about-content {
      display: flex;
