@@ -515,8 +515,9 @@ section h2 {
 
 /* -------------------------------------------- footer section ------------------------------------------------------*/
 .footer-section {
-     background-color: white;
+     background-color: #343a40;
      padding: 70px 0;
+     color: white;
 }
 
 .footer-section .container {
@@ -540,7 +541,7 @@ section h2 {
 
 .footer-section .container ul a {
      text-decoration: none;
-     color: black;
+     color: white;
 }
 
 
@@ -597,7 +598,7 @@ footer .fa {
 .copyright {
      padding: 30px 0;
      text-align: center;
-     background-color: rgb(10, 15, 27);
+     background-color: #343a40;
      color: white;
 }
 
