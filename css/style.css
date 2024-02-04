@@ -16,11 +16,11 @@ body {
      margin: auto;
 }
 section {
-     padding: 80px ;
+     padding: 80px 0;
 }
 
 section h2 {
-     margin: 0;
+     margin: 0 0 50px 0;
      font-size: 50px;
      color: rgb(61, 68, 71);
 }
@@ -154,8 +154,8 @@ section h2 {
           #nav-bar .iconBar {
                display: block;
                position: absolute;
-               right: 60px;
-               top: 55px;
+               right: 20px;
+               top: 15px;
           }
 
           #nav-bar ul li, #brand {
@@ -219,10 +219,6 @@ section h2 {
      font-size: 25px;
 }
 
-#about-me h2 {
-     margin-bottom: 100px ;
-}
-
 #about-me p {
      font-size: 30px;
 }
@@ -263,8 +259,6 @@ section h2 {
 
           #about-me h2 {
                font-size: 50px;
-               color: rgb(14, 165, 233);
-               margin-bottom: 100px ;
           }
           #profil {
                width: 70%;
