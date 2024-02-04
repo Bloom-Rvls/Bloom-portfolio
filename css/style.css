@@ -72,6 +72,7 @@ section h1 {
      justify-content: center;
      align-items: center;
      height: 100px;*/
+     height: 100px;
      background-color: white;
      position: fixed;
      top: 0;
@@ -85,7 +86,7 @@ section h1 {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     height: 100px;
+     height: inherit;
 }
 
 #nav-bar .navbarContainer a {
@@ -138,6 +139,14 @@ section h1 {
 
      /* for mobile phones*/
      @media (max-width: 768px) {
+          #nav-bar {
+               height: 60px;
+          }
+
+          #nav-bar .navbarContainer {
+               height: inherit;
+          }
+
           #nav-bar .myNav {
                display: none;
           }
@@ -174,6 +183,22 @@ section h1 {
           }
      
      }
+
+/* -------------------------------------------- banner ------------------------------------------------------*/
+.banner-section {
+     padding-top: 100px;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     background-color: black;
+     color: white;
+}
+
+.banner-section .content-wrapper {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
 
 
 /* -------------------------------------------- About section ------------------------------------------------------*/
