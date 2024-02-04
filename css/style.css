@@ -168,13 +168,13 @@ section h2 {
           #nav-bar .myNav.active {
                display: block;
                position: relative;
-               top: 60px;
+               background-color: white;
+               top: 130px;
                height: 200px;
-               width: 100%;
+               width: 500px;
                display: flex;
                flex-direction: column;
                justify-content: space-between;
-               justify-content: space-around;
                align-items: flex-start;
           }
      
