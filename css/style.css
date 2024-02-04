@@ -30,8 +30,19 @@ section h2 {
      color: white;
 }
 
+.btn {
+     padding: 10px;
+     border-radius: 10px;
+     border: none;
+     font-size: 15px;
+}
+
 .text-blue {
      color: rgb(14, 165, 233);
+}
+
+.text-white {
+     color: white;
 }
 
 .d-flex-center {
