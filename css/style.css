@@ -15,9 +15,9 @@ body {
      width: 80%;
      margin: auto;
 }
-/*section {
-     margin: 70px 0 70px 0;
-}*/
+section {
+     padding: 80px ;
+}
 
 section h2 {
      margin: 0;
@@ -376,9 +376,6 @@ section h2 {
      }
 
 /* -------------------------------------------- diploma and certification ------------------------------------------------------*/
-#diploma-certification {
-     padding: 30px 0 50px 0;
-}
 
 .certificate {
      display: flex;
