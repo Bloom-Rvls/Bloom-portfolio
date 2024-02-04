@@ -180,8 +180,8 @@ section h2 {
                display: block;
                position: relative;
                background-color: white;
-               top: 130px;
-               height: 200px;
+               top: 170px;
+               height: 300px;
                width: 500px;
                display: flex;
                flex-direction: column;
