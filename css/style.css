@@ -8,7 +8,7 @@ html {
 body {
      margin: 0;
      /*color: white;*/
-     background-color: #F6F7F9;
+     background-color: #f8f9fa;
      font-size: larger;
 }
 .container {
@@ -26,7 +26,7 @@ section h2 {
 }
 
 .bg-blue {
-     background-color: rgb(14, 165, 233);
+     background-color: #ffc107;
      color: white;
 }
 
@@ -38,7 +38,7 @@ section h2 {
 }
 
 .text-blue {
-     color: rgb(14, 165, 233);
+     color: #ffc107;
 }
 
 .text-white {
@@ -130,13 +130,13 @@ section h2 {
 }
 
 .navLink:hover {
-     border-bottom: solid 1px rgb(14, 165, 233);
-     color: rgb(14, 165, 233);
+     border-bottom: solid 1px #ffc107;
+     color: #ffc107;
 }
 
 .navLink:active {
-     border-bottom: solid 1px rgb(14, 165, 233);
-     color: rgb(14, 165, 233);
+     border-bottom: solid 1px #ffc107;
+     color: #ffc107;
 }
 
 #nav-bar .iconBar {
@@ -208,33 +208,39 @@ section h2 {
 .banner-section .content-wrapper {
      display: flex;
      justify-content: space-between;
-     flex-wrap: wrap;
 }
 
 .banner-section .content-wrapper .banner-description {
      flex: 1;
      display: flex;
-     flex-direction: column;
      justify-content: center;
+     align-items: center;
+}
+
+.banner-section .content-wrapper .banner-description .description-w {
+     width: 100%;
 }
 
 .banner-section .content-wrapper .banner-description  h1 {
-          font-size: 60px;
+     font-size: 60px;
 }
 
 .banner-section .content-wrapper .banner-description  span {
-          text-transform: uppercase;
+     text-transform: uppercase;
 }
 
 .banner-section .content-wrapper .banner-description  p {
           font-size: 50px;
-          color: rgb(14, 165, 233);
+          color: #ffc107;
           font-weight: bold;
 }
 
 .banner-section .content-wrapper .banner-img {
      max-width: 700px;
      width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 .banner-section .content-wrapper .banner-img img {
@@ -242,6 +248,14 @@ section h2 {
 }
 
      @media (max-width: 768px) {
+          .banner-section .content-wrapper {
+               flex-wrap: wrap;
+          }
+
+          .banner-section .content-wrapper .banner-description {
+               width: 100%;
+          }
+
           .banner-section .content-wrapper .banner-description  h1 {
                font-size: 30px;
                text-align: center;
@@ -260,7 +274,6 @@ section h2 {
 #about-content {
      display: flex;
      justify-content: space-between;
-     flex-wrap: wrap-reverse;
 }
 
 #about-me {
@@ -283,8 +296,8 @@ section h2 {
      font-size: 23px;
      border-radius: 20px;
      color: white;
-     background-color: rgb(14, 165, 233);  
-     border: solid rgb(14, 165, 233) 2px;
+     background-color: #ffc107;  
+     border: solid #ffc107 2px;
      font-weight: bold;
 }
 
@@ -295,10 +308,15 @@ section h2 {
 }
 
 .img-w {
-     width: 40%;
+     max-width: 700px;
+     width: 100%;
      display: flex;
      justify-content: center;
-     padding: 50px;
+     align-items: center;
+}
+
+.img-w .wrapper {
+     width: 70%;
 }
 
 #profil {
@@ -309,6 +327,9 @@ section h2 {
 
      /* for mobile phones*/
      @media (max-width: 768px) {
+          #about-content {
+               flex-wrap: wrap-reverse;
+          }
 
           #about-me h2 {
                font-size: 50px;
@@ -494,7 +515,7 @@ section h2 {
 }
 
 #projects-section .card .card-content>a {
-     color: rgb(14, 165, 233);
+     color: #ffc107;
      text-decoration: none;
 }
 
@@ -572,7 +593,7 @@ section h2 {
 
 /* -------------------------------------------- footer section ------------------------------------------------------*/
 .footer-section {
-     background-color: #343a40;
+     background-color: rgb(18, 15, 15);
      padding: 70px 0;
      color: white;
 }
@@ -628,7 +649,7 @@ footer .fa {
      padding: 7px 7px 7px 7px;
      font-size: 35px;
      text-decoration: none;
-     color: rgb(14, 165, 233);
+     color: #ffc107;
 }
 
 
@@ -651,7 +672,7 @@ footer .fa {
 .copyright {
      padding: 30px 0;
      text-align: center;
-     background-color: #343a40;
+     background-color: rgb(18, 15, 15);
      color: white;
 }
 
@@ -661,7 +682,7 @@ footer .fa {
 #back-to-top {
      font-size: 40px;
      color: white;
-     background-color: rgb(14, 165, 233);
+     background-color: #ffc107;
      position: fixed;
      bottom: 10px;
      right: 100px;
