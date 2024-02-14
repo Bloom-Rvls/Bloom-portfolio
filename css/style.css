@@ -26,7 +26,7 @@ section h2 {
 }
 
 .bg-yellow {
-     background-color: #ffc107;
+     background-color: #FAA902;
      color: white;
 }
 
@@ -38,7 +38,7 @@ section h2 {
 }
 
 .text-yellow {
-     color: #ffc107;
+     color: #FAA902;
 }
 
 .text-white {
@@ -135,13 +135,13 @@ section h2 {
 }
 
 .navLink:hover {
-     border-bottom: solid 1px #ffc107;
-     color: #ffc107;
+     border-bottom: solid 1px #FAA902;
+     color: #FAA902;
 }
 
 .navLink:active {
-     border-bottom: solid 1px #ffc107;
-     color: #ffc107;
+     border-bottom: solid 1px #FAA902;
+     color: #FAA902;
 }
 
 #nav-bar .iconBar {
@@ -301,8 +301,8 @@ section h2 {
      font-size: 23px;
      border-radius: 20px;
      color: white;
-     background-color: #ffc107;  
-     border: solid #ffc107 2px;
+     background-color: #FAA902;  
+     border: solid #FAA902 2px;
      font-weight: bold;
 }
 
@@ -520,7 +520,7 @@ section h2 {
 }
 
 #projects-section .card .card-content>a {
-     color: #ffc107;
+     color: #FAA902;
      text-decoration: none;
 }
 
@@ -654,7 +654,7 @@ footer .fa {
      padding: 7px 7px 7px 7px;
      font-size: 35px;
      text-decoration: none;
-     color: #ffc107;
+     color: #FAA902;
 }
 
 
@@ -687,7 +687,7 @@ footer .fa {
 #back-to-top {
      font-size: 40px;
      color: white;
-     background-color: #ffc107;
+     background-color: #FAA902;
      position: fixed;
      bottom: 10px;
      right: 100px;
