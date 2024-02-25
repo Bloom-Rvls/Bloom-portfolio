@@ -11,6 +11,10 @@ menu.addEventListener ("click", () => {
   
 });
 
+menuList.addEventListener ("touchend", () => {
+  menuList.classList.remove("active");
+});
+
 //loader script
 window.onload = function(){
 
